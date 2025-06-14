@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="testComponents.Listeners"></listener>
+    </listeners>
+        <groups>
+            <run>
+                <include name="ErrorHandling"></include>
+            </run>
+        </groups>
+    <test verbose="2" preserve-order="true" name="Submit Order Test">
+    </test>
+    <test name="Error validation">
+        <classes>
+            <class name="test.ecommerce.ErrorValidation">
+                <methods>
+                    <include name="loginError"/>
+                    <include name="productErrorValidaction"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

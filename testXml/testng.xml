@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Submit Order Test">
+        <classes>
+            <class name="test.ecommerce.SubmitOrderTest">
+                <methods>
+                    <include name="submitOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Error validation">
+        <classes>
+            <class name="test.ecommerce.ErrorValidation">
+                <methods>
+                    <include name="submitOrder"/>
+                    <include name="productErrorValidaction"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

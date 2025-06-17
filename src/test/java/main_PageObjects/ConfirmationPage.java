@@ -10,6 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 public class ConfirmationPage extends AbastractComponents {
     WebDriver driver;
 
+    //Esto es un comentario
+
     public ConfirmationPage(WebDriver driver) {
         super(driver);
         this.driver= driver;
